@@ -4,7 +4,7 @@
   --primaryGray: #bbbbbf;
   --lightBlue1: #ebf4ff;
   --lightBlue2: #dceefa;
-  --primaryTransition: all 0.4s linear;
+  --primaryTransition: all 0.3s linear;
 }
 /* #################### UNIVERSAL STYLES #################### */
 *,
@@ -19,6 +19,17 @@ html {
 }
 body {
   font-family: "Roboto", sans-serif;
+}
+.section-page {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 7rem 7rem;
+}
+.section-heading {
+  font-size: 5rem;
+  font-weight: 900;
+  text-align: center;
+  color: var(--primaryBlue);
 }
 /* #################### HEADER #################### */
 .header {
@@ -38,7 +49,7 @@ body {
   align-items: center;
   z-index: 10;
 }
-.logo h2 {
+.logo h3 {
   font-size: 3.5rem;
   font-weight: 700;
   color: var(--primaryBlue);
@@ -73,45 +84,45 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
-    cursor: pointer;
     width: 68px;
     height: 68px;
     opacity: 0;
+    z-index: 2;
+    cursor: pointer;
   }
   .menu-wrap .hamburger {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
     width: 68px;
     height: 68px;
     padding: 1rem;
     background: #fff;
+    z-index: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
   .menu-wrap .hamburger > div {
     position: relative;
-    flex: none;
     width: 100%;
     height: 5px;
     background: var(--primaryBlue);
+    transition: var(--primaryTransition);
     display: flex;
-    align-items: center;
+    flex: none;
     justify-content: center;
-    transition: all 0.4s ease;
+    align-items: center;
   }
   .menu-wrap .hamburger > div::before,
   .menu-wrap .hamburger > div::after {
     content: "";
     position: absolute;
-    z-index: 1;
     top: -10px;
     width: 100%;
     height: 5px;
     background: inherit;
+    z-index: 1;
   }
   .menu-wrap .hamburger > div::after {
     top: 10px;
@@ -120,8 +131,8 @@ body {
     background-color: var(--primaryBlue);
   }
   .menu-wrap .toggler:checked + .hamburger > div {
-    transform: rotate(135deg);
     background-color: #fff;
+    transform: rotate(135deg);
   }
   .menu-wrap .toggler:checked + .hamburger > div:before,
   .menu-wrap .toggler:checked + .hamburger > div:after {
@@ -136,11 +147,11 @@ body {
   }
   .menu-wrap .toggler:checked ~ .menu > div {
     transform: scale(1);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
   }
   .menu-wrap .toggler:checked ~ .menu > div > div {
     opacity: 1;
-    transition: opacity 0.4s ease 0.4s;
+    transition: opacity 0.3s linear 0.4s;
   }
   .menu-wrap .menu {
     position: fixed;
@@ -151,39 +162,39 @@ body {
     visibility: hidden;
     overflow: hidden;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
   .menu-wrap .menu > div {
-    background: rgba(0, 116, 255, 0.9);
-    border-radius: 50%;
     width: 250vw;
     height: 250vw;
-    display: flex;
-    flex: none;
-    align-items: center;
-    justify-content: center;
+    background: rgba(0, 116, 255, 0.9);
+    border-radius: 50%;
     transform: scale(0);
     transition: var(--primaryTransition);
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
   }
   .menu-wrap .menu > div > div {
-    text-align: center;
     max-width: 90vw;
     max-height: 100vh;
+    text-align: center;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.3s ease;
   }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    color: #fff;
     font-size: 5rem;
+    color: #fff;
     padding: 1rem;
     margin: 2rem;
   }
   .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.4s ease;
+    transition: color 0.3s ease;
   }
   .menu-wrap .menu > div > div > h2 {
     font-size: 5rem;
@@ -200,4 +211,139 @@ body {
   .topnav {
     display: none;
   }
+}
+/* #################### BANNER #################### */
+.banner {
+  width: 100%;
+  height: 100vh;
+  /* margin-top: 7rem; */
+  background-image: linear-gradient(
+      rgba(0, 116, 255, 0.4),
+      rgba(0, 116, 255, 0.8),
+      rgba(0, 116, 255, 0.4)
+    ),
+    url(/img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner__heading {
+  font-size: 10rem;
+  font-weight: 900;
+  color: #fff;
+  animation-name: heading-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.banner__paragraph {
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 5rem;
+  animation-name: paragraph-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.banner__btn {
+  display: inline-block;
+  color: var(--primaryBlue);
+  font: inherit;
+  padding: 1rem 3rem;
+  margin-top: 5rem;
+  background-color: #fff;
+  border: 0.5rem solid var(--primaryBlue);
+  border-radius: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: var(--primaryTransition);
+  cursor: pointer;
+  animation-name: btn-animation;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+.banner__btn:hover {
+  color: #fff;
+  background-color: var(--primaryBlue);
+  border: 0.5rem solid #fff;
+  transform: scale(1.1);
+}
+.banner__btn:active {
+  transform: scale(1);
+}
+.banner__btn:focus {
+  outline: none;
+}
+/* BANNER ANIMATIONS*/
+@keyframes heading-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes paragraph-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(25rem);
+  }
+  25% {
+    opacity: 0.25;
+    transform: translateX(-12.5rem);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(6.25rem);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes btn-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(25rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ########## ABOUT ME ########## */
+.about-me {
+  background-color: var(--lightBlue1);
+}
+/* ########## MY PROJECTS ########## */
+.my-projects {
+  background-color: var(--lightBlue2);
+}
+/* ########## KNOWLEDGE ########## */
+.knowledge {
+  background-color: var(--lightBlue1);
+}
+/* ########## CERTIFICATES ########## */
+.certificates {
+  background-color: var(--lightBlue2);
+}
+/* ########## CONTACT ME ########## */
+.contact-me {
+  background-color: var(--lightBlue1);
+}
+/* ########## FOOTER ########## */
+.footer {
+  background-color: var(--lightBlue2);
 }
