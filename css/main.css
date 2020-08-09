@@ -21,6 +21,13 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+.section-page h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primaryBlue);
+  margin-bottom: 5rem;
+}
 .section-page {
   width: 100%;
   margin: 0 auto;
@@ -31,6 +38,7 @@ body {
   font-weight: 900;
   text-align: center;
   color: var(--primaryBlue);
+  margin-bottom: 10rem;
 }
 /* #################### HEADER #################### */
 .header {
@@ -344,6 +352,66 @@ body {
 .contact-me {
   background-color: var(--lightBlue1);
 }
+.social__items {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.social__item--link {
+  display: inline-block;
+  text-decoration: none;
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--primaryBlue);
+  transition: var(--primaryTransition);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.fa-github {
+  color: #4078c0;
+}
+.fa-stack-overflow {
+  color: #ef8236;
+}
+.fa-facebook-square {
+  color: #4267b2;
+}
+.fa-instagram-square {
+  color: #3f729b;
+}
+.fa-twitter-square {
+  color: #00acee;
+}
+.fa-linkedin {
+  color: #0e76a8;
+}
+.social__item--link:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px var(--primaryBlue);
+}
+.social__item--link:active {
+  transform: scale(1);
+}
+.social__item--link:focus {
+  outline: none;
+}
+.social__item--icon {
+  font-size: 7rem;
+  padding-bottom: 2rem;
+}
+.social__item--paragraph {
+  font-size: 2rem;
+  color: var(--primaryBlue);
+}
+
 /* ########## FOOTER ########## */
 .footer {
   background-color: var(--lightBlue2);
