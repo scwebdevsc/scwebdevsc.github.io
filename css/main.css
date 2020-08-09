@@ -415,4 +415,42 @@ body {
 /* ########## FOOTER ########## */
 .footer {
   background-color: var(--lightBlue2);
+  padding-bottom: 1.8rem;
+}
+.footer__nav--items {
+  width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.footer__nav--item {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 3rem;
+}
+.footer__nav--link {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--primaryBlue);
+  background-color: #fff;
+  transition: var(--primaryTransition);
+  padding: 1rem;
+  border-radius: 2rem;
+  transition: var(--primaryTransition);
+}
+.footer__nav--link:hover {
+  color: #fff;
+  background-color: var(--primaryBlue);
+}
+.copy-right {
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  color: var(--primaryBlue);
+  font-size: 2rem;
+  font-weight: 700;
 }
