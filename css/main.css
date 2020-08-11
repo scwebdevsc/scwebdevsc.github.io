@@ -430,6 +430,7 @@ img {
   text-decoration: none;
   width: 150px;
   height: 150px;
+  background-color: var(--lightBlue2);
   border: 1px solid var(--primaryBlue);
   border-radius: 2rem;
   transition: var(--primaryTransition);
@@ -501,7 +502,7 @@ img {
   text-decoration: none;
   font-weight: 700;
   color: var(--primaryBlue);
-  background-color: #fff;
+  background-color: transparent;
   transition: var(--primaryTransition);
   padding: 1rem;
   border-radius: 2rem;
