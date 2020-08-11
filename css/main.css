@@ -21,6 +21,10 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 }
+img {
+  width: 100%;
+  display: block;
+}
 .section-page h3 {
   font-size: 4rem;
   font-weight: 700;
@@ -344,6 +348,65 @@ body {
 .knowledge {
   background-color: var(--lightBlue1);
 }
+.knowledge__cards {
+  width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.knowledge__card {
+  width: 20rem;
+  height: 40rem;
+  border: 1px solid var(--primaryBlue);
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: var(--primaryTransition);
+}
+.knowledge__card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px var(--primaryBlue);
+}
+.knowledge__card--top {
+  overflow: hidden;
+}
+.knowledge__card--bottom {
+  background-color: var(--lightBlue2);
+  height: 20rem;
+  border-radius: 0 0 2rem 2rem;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.knowledge__card--heading {
+  font-size: 3rem;
+  color: var(--primaryBlue);
+  text-align: center;
+}
+.knowledge__card--logo {
+  font-size: 7rem;
+  color: var(--primaryBlue);
+}
+.fa-spinner {
+  animation-name: icon-spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* ########## CERTIFICATES ########## */
 .certificates {
   background-color: var(--lightBlue2);
@@ -368,6 +431,7 @@ body {
   width: 150px;
   height: 150px;
   border: 1px solid var(--primaryBlue);
+  border-radius: 2rem;
   transition: var(--primaryTransition);
   display: flex;
   flex-direction: column;
