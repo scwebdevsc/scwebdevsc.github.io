@@ -374,7 +374,7 @@ img {
   position: absolute;
   top: 3rem;
   left: 3rem;
-  box-shbox-shadow: 5px 5px 5px var(--primaryBlue);
+  box-shadow: 5px 5px 5px var(--primaryBlue);
   border-radius: 2rem;
 }
 
@@ -464,46 +464,84 @@ img {
   background-color: var(--lightBlue2);
 }
 .cerificates__wrapper {
-  width: 120rem;
+  max-width: 120rem;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  justify-items: center;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
 }
 .certificates__paragraphs {
   font-size: 3rem;
   text-align: justify;
   margin-bottom: 5rem;
 }
-.cetificates__academy {
+.cetificates__academy--udemy {
+  color: #ec5252;
   font-weight: 700;
 }
-.cetificates__photo {
-  width: 400px;
-  height: 300px;
+.cetificates__academy--freecodecamp {
+  color: #0a0a23;
+  font-weight: 700;
+}
+.cetificates__academy--sololearn {
+  color: #ed7643;
+  font-weight: 700;
+}
+.certificates__links {
+  color: var(--primaryBlue);
+  font-weight: 700;
+}
+.slider {
+  overflow: hidden;
+  border: 1px solid var(--primaryBlue);
+  max-width: 500px;
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+.slider figure {
   position: relative;
-  top: 0;
+  width: 500%;
+  margin: 0;
   left: 0;
+  animation-name: slider;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-.certificates__photo--1 {
-  box-shadow: 5px 5px 5px var(--primaryBlue);
+.slider figure img {
+  width: 20%;
+  float: left;
 }
-.certificates__photo--2 {
-  position: absolute;
-  top: -120px;
-  left: 120px;
-  box-shadow: 5px 5px 5px var(--primaryBlue);
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  10% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  35% {
+    left: -100%;
+  }
+  45% {
+    left: -200%;
+  }
+  55% {
+    left: -200%;
+  }
+  65% {
+    left: -300%;
+  }
+  75% {
+    left: -300%;
+  }
+  90% {
+    left: -400%;
+  }
+  100% {
+    left: -400%;
+  }
 }
-.certificates__photo--3 {
-  position: absolute;
-  top: 40px;
-  left: 180px;
-  box-shadow: 5px 5px 5px var(--primaryBlue);
-}
+
 /* ########## CONTACT ME ########## */
 .contact-me {
   background-color: var(--lightBlue1);
@@ -513,6 +551,7 @@ img {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
   justify-items: center;
   align-items: center;
   justify-content: center;
