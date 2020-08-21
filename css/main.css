@@ -1,12 +1,13 @@
-/* #################### CSS VARIABLES #################### */
+/* ############################## CSS VARIABLES ############################## */
 :root {
   --primaryBlue: #0074ff;
-  --primaryGray: #bbbbbf;
   --lightBlue1: #ebf4ff;
   --lightBlue2: #dceefa;
   --primaryTransition: all 0.3s linear;
+  --primaryBoxShadow: 5px 5px 5px var(--primaryBlue);
+  --primaryBorder: 1px solid var(--primaryBlue);
 }
-/* #################### UNIVERSAL STYLES #################### */
+/* ############################## UNIVERSAL STYLES ############################## */
 *,
 ::before,
 ::after {
@@ -30,30 +31,30 @@ img {
   font-size: 4rem;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 .section-page {
   width: 100%;
+  padding: 100px;
   margin: 0 auto;
-  padding: 10rem;
 }
 .section-heading {
   font-size: 5rem;
   font-weight: 900;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
-/* #################### HEADER #################### */
+/* ############################## HEADER ############################## */
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-  padding: 0 2rem;
+  padding: 0 20px;
   background-color: #fff;
-  border-bottom: 0.2rem solid var(--primaryBlue);
-  box-shadow: 0 0.2rem 0.2rem var(--primaryBlue);
+  border-bottom: 2px solid var(--primaryBlue);
+  box-shadow: 0 2px 2px var(--primaryBlue);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -74,9 +75,9 @@ img {
   text-decoration: none;
   font-weight: 700;
   color: var(--primaryBlue);
-  margin: 2rem 0 2rem 2rem;
-  padding: 1rem;
-  border-radius: 2rem;
+  padding: 10px;
+  margin: 20px 0 20px 20px;
+  border-radius: 20px;
 }
 .topnav__items a:hover {
   color: #fff;
@@ -107,7 +108,7 @@ img {
     right: 0;
     width: 68px;
     height: 68px;
-    padding: 1rem;
+    padding: 10px;
     background: #fff;
     z-index: 1;
     display: flex;
@@ -180,7 +181,7 @@ img {
     width: 250vw;
     height: 250vw;
     background: rgba(0, 116, 255, 0.9);
-    border-radius: 2rem;
+    border-radius: 20px;
     transform: scale(0);
     transition: var(--primaryTransition);
     display: flex;
@@ -193,19 +194,19 @@ img {
     max-height: 100vh;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s linear;
   }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
     font-size: 5rem;
     color: #fff;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 10px;
+    margin: 20px;
   }
   .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s linear;
   }
   .menu-wrap .menu > div > div > h2 {
     font-size: 5rem;
@@ -223,11 +224,11 @@ img {
     display: none;
   }
 }
-/* #################### BANNER #################### */
+/* ############################## BANNER ############################## */
 .banner {
   width: 100%;
   height: 100vh;
-  margin-top: 7rem;
+  margin-top: 70px;
   background-image: linear-gradient(
       rgba(0, 116, 255, 0.4),
       rgba(0, 116, 255, 0.8),
@@ -238,12 +239,12 @@ img {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  text-align: center;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 .banner__heading {
   font-size: 10rem;
@@ -256,7 +257,7 @@ img {
 .banner__paragraph {
   font-size: 3rem;
   color: #fff;
-  margin-top: 5rem;
+  margin-top: 50px;
   animation-name: paragraph-animation;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -265,10 +266,10 @@ img {
   display: inline-block;
   color: var(--primaryBlue);
   font: inherit;
-  padding: 1rem 3rem;
-  margin-top: 5rem;
+  padding: 10px 30px;
+  margin-top: 50px;
   background-color: #fff;
-  border: 0.5rem solid var(--primaryBlue);
+  border: 5px solid var(--primaryBlue);
   border-radius: 1rem;
   font-size: 3rem;
   font-weight: 700;
@@ -282,7 +283,7 @@ img {
 .banner__btn:hover {
   color: #fff;
   background-color: var(--primaryBlue);
-  border: 0.5rem solid #fff;
+  border: 5px solid #fff;
   transform: scale(1.1);
 }
 .banner__btn:active {
@@ -295,7 +296,7 @@ img {
 @keyframes heading-animation {
   0% {
     opacity: 0;
-    transform: translateY(-25rem);
+    transform: translateY(-250px);
   }
   100% {
     opacity: 1;
@@ -305,19 +306,19 @@ img {
 @keyframes paragraph-animation {
   0% {
     opacity: 0;
-    transform: translateX(25rem);
+    transform: translateX(250px);
   }
   25% {
     opacity: 0.25;
-    transform: translateX(-12.5rem);
+    transform: translateX(-125px);
   }
   50% {
     opacity: 0.5;
-    transform: translateX(6.25rem);
+    transform: translateX(62, 5px);
   }
   75% {
     opacity: 0.75;
-    transform: translateX(-3rem);
+    transform: translateX(-30px);
   }
   100% {
     opacity: 1;
@@ -327,30 +328,30 @@ img {
 @keyframes btn-animation {
   0% {
     opacity: 0;
-    transform: translateY(25rem);
+    transform: translateY(250px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/* ########## ABOUT ME ########## */
+/* ############################## ABOUT ME ############################## */
 .about-me {
   background-color: var(--lightBlue1);
 }
 .about-me__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 10px;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 .about-me__text {
-  height: 50rem;
+  height: 500px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -362,77 +363,76 @@ img {
   text-align: justify;
 }
 .about-me__photo {
-  width: 50rem;
-  height: 50rem;
   position: relative;
-  border: 1rem solid var(--primaryBlue);
-  border-radius: 2rem;
+  width: 500px;
+  height: 500px;
+  border: 10px solid var(--primaryBlue);
+  border-radius: 20px;
 }
 .about-me__photo--profile {
+  position: absolute;
+  top: 30px;
+  left: 30px;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-  box-shadow: 5px 5px 5px var(--primaryBlue);
-  border-radius: 2rem;
+  box-shadow: var(--primaryBoxShadow);
+  border-radius: 20px;
 }
-
-/* ########## MY PROJECTS ########## */
+/* ############################## MY PROJECTS ############################## */
 .my-projects {
   background-color: var(--lightBlue2);
 }
 .my-projects__wrapper {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
   justify-items: center;
-  align-content: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 .my-projects__photo {
-  width: 40rem;
-  height: 30rem;
-  border: 1px solid var(--primaryBlue);
+  width: 400px;
+  height: 300px;
+  border: var(--primaryBorder);
 }
-/* ########## KNOWLEDGE ########## */
+/* ############################## KNOWLEDGE ############################## */
 .knowledge {
   background-color: var(--lightBlue1);
 }
 .knowledge__cards {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 .knowledge__card {
-  width: 20rem;
-  height: 40rem;
-  border: 1px solid var(--primaryBlue);
-  border-radius: 2rem;
+  width: 200px;
+  height: 400px;
+  border: var(--primaryBorder);
+  border-radius: 20px;
   overflow: hidden;
   transition: var(--primaryTransition);
 }
 .knowledge__card:hover {
   transform: scale(1.1);
-  box-shadow: 5px 5px 5px var(--primaryBlue);
+  box-shadow: var(--primaryBoxShadow);
 }
 .knowledge__card--top {
   overflow: hidden;
 }
 .knowledge__card--bottom {
   background-color: var(--lightBlue2);
-  height: 20rem;
-  border-radius: 0 0 2rem 2rem;
-  padding: 2rem 0 2rem 0;
+  height: 200px;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 0 20px 0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -459,41 +459,41 @@ img {
     transform: rotate(360deg);
   }
 }
-/* ########## CERTIFICATES ########## */
+/* ############################## CERTIFICATES ############################## */
 .certificates {
   background-color: var(--lightBlue2);
 }
 .cerificates__wrapper {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .certificates__paragraphs {
   font-size: 3rem;
   text-align: justify;
-  margin-bottom: 3rem;
+  margin-bottom: 30px;
 }
 .cetificates__academy--udemy {
-  color: #ec5252;
   font-weight: 700;
+  color: #ec5252;
 }
 .cetificates__academy--freecodecamp {
-  color: #0a0a23;
   font-weight: 700;
+  color: #0a0a23;
 }
 .cetificates__academy--sololearn {
-  color: #ed7643;
   font-weight: 700;
+  color: #ed7643;
 }
 .certificates__links {
-  color: var(--primaryBlue);
   font-weight: 700;
+  color: var(--primaryBlue);
 }
 .slider {
-  overflow: hidden;
-  border: 1px solid var(--primaryBlue);
   max-width: 500px;
-  border-radius: 2rem;
   margin: 0 auto;
+  border: var(--primaryBorder);
+  border-radius: 20px;
+  overflow: hidden;
 }
 .slider figure {
   position: relative;
@@ -541,8 +541,7 @@ img {
     left: -400%;
   }
 }
-
-/* ########## CONTACT ME ########## */
+/* ############################## CONTACT ME ############################## */
 .contact-me {
   background-color: var(--lightBlue1);
 }
@@ -551,7 +550,7 @@ img {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 1rem;
+  gap: 10px;
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -559,12 +558,12 @@ img {
 }
 .social__item--link {
   display: inline-block;
-  text-decoration: none;
   width: 150px;
   height: 150px;
+  text-decoration: none;
   background-color: var(--lightBlue2);
   border: 1px solid var(--primaryBlue);
-  border-radius: 2rem;
+  border-radius: 20px;
   transition: var(--primaryTransition);
   display: flex;
   flex-direction: column;
@@ -572,7 +571,6 @@ img {
   justify-content: center;
   align-items: center;
 }
-
 .fa-github {
   color: #4078c0;
 }
@@ -593,7 +591,7 @@ img {
 }
 .social__item--link:hover {
   transform: scale(1.1);
-  box-shadow: 5px 5px 5px var(--primaryBlue);
+  box-shadow: var(--primaryBoxShadow);
 }
 .social__item--link:active {
   transform: scale(1);
@@ -603,24 +601,30 @@ img {
 }
 .social__item--icon {
   font-size: 7rem;
-  padding-bottom: 2rem;
+  padding-bottom: 20px;
 }
 .social__item--paragraph {
   font-size: 2rem;
   text-align: justify;
   color: var(--primaryBlue);
 }
-/* ########## FOOTER ########## */
+/* MEDIA QUERIES FOR CONTACT ME SECTION */
+@media screen and (max-width: 1000px) {
+  .social__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ############################## FOOTER ############################## */
 .footer {
   background-color: var(--lightBlue2);
-  padding-bottom: 1.8rem;
+  padding-bottom: 18px;
 }
 .footer__nav--items {
-  max-width: 120rem;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
+  gap: 10px;
   justify-content: center;
   align-content: center;
   justify-items: center;
@@ -628,17 +632,17 @@ img {
 }
 .footer__nav--item {
   display: inline-block;
-  list-style-type: none;
   font-size: 3rem;
+  list-style-type: none;
 }
 .footer__nav--link {
-  text-decoration: none;
   font-weight: 700;
+  text-decoration: none;
   color: var(--primaryBlue);
+  padding: 10px;
   background-color: transparent;
   transition: var(--primaryTransition);
-  padding: 1rem;
-  border-radius: 2rem;
+  border-radius: 20px;
   transition: var(--primaryTransition);
 }
 .footer__nav--link:hover {
@@ -646,8 +650,8 @@ img {
   background-color: var(--primaryBlue);
 }
 .copy-right {
-  margin: 5rem auto 0 auto;
-  text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
+  margin: 50px auto 0 auto;
 }
