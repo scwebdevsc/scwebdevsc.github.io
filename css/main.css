@@ -63,7 +63,7 @@ img {
   z-index: 10;
 }
 .logo h3 {
-  font-size: 3.5rem;
+  font-size: 35px;
   font-weight: 700;
 }
 .topnav__item {
@@ -213,17 +213,7 @@ img {
     color: #fff;
   }
 }
-/* MEDIA QUERIES FOR HEADER SECTION */
-@media screen and (min-width: 1400px) {
-  .menu-wrap {
-    display: none;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .topnav {
-    display: none;
-  }
-}
+
 /* ############################## BANNER ############################## */
 .banner {
   width: 100%;
@@ -250,6 +240,7 @@ img {
   font-size: 10rem;
   font-weight: 900;
   color: #fff;
+  margin: 0 25px;
   animation-name: heading-animation;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -344,14 +335,14 @@ img {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  gap: 10px;
+  gap: 50px;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
 .about-me__text {
-  height: 500px;
+  /* height: 400px; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -360,6 +351,7 @@ img {
 }
 .about-me__text--paragraph {
   font-size: 3rem;
+  margin-bottom: 25px;
   text-align: justify;
 }
 .about-me__photo {
@@ -394,6 +386,7 @@ img {
   align-content: center;
 }
 .my-projects__photo {
+  display: none;
   width: 400px;
   height: 300px;
   border: var(--primaryBorder);
@@ -571,6 +564,12 @@ img {
   justify-content: center;
   align-items: center;
 }
+.contact-me__info {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
 .fa-github {
   color: #4078c0;
 }
@@ -608,12 +607,6 @@ img {
   text-align: justify;
   color: var(--primaryBlue);
 }
-/* MEDIA QUERIES FOR CONTACT ME SECTION */
-@media screen and (max-width: 1000px) {
-  .social__items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 /* ############################## FOOTER ############################## */
 .footer {
   background-color: var(--lightBlue2);
@@ -623,7 +616,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
   justify-content: center;
   align-content: center;
@@ -654,4 +647,141 @@ img {
   font-weight: 700;
   text-align: center;
   margin: 50px auto 0 auto;
+}
+/* ############################## MEDIA QUERIES ############################## */
+/* ############################## MEDIA QUERIES FOR UNIVERSAL STYLES ############################## */
+@media screen and (max-width: 700px) {
+  .section-page {
+    padding: 100px 25px 100px 25px;
+  }
+}
+/* ############################## MEDIA QUERIES FOR HEADER SECTION ############################## */
+@media screen and (min-width: 1400px) {
+  .menu-wrap {
+    display: none;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .topnav {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .logo__small {
+    display: none;
+  }
+}
+/* ############################## MEDIA QUERIES FOR BANNER SECTION ############################## */
+@media screen and (max-width: 1124px) {
+  .banner__heading {
+    font-size: 9rem;
+  }
+}
+@media screen and (max-width: 1017px) {
+  .banner__heading {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  .banner__heading {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 910px) {
+  .banner__heading {
+    font-size: 7rem;
+  }
+}
+@media screen and (max-width: 802px) {
+  .banner__heading {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 695px) {
+  .banner__heading {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 695px) {
+  .banner__heading {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 587px) {
+  .banner__heading {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .banner__heading {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 373px) {
+  .banner__heading {
+    font-size: 2rem;
+  }
+}
+
+/* ############################## MEDIA QUERIES FOR ABOUT ME SECTION ############################## */
+@media screen and (max-width: 600px) {
+  .about-me__wrapper {
+    display: block;
+  }
+  .about-me__photo--profile {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+  }
+  .about-me__photo {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ############################## MEDIA QUERIES FOR PROJECTS SECTION ############################## */
+/* ############################## MEDIA QUERIES FOR KNOWLEDGE SECTION ############################## */
+/* ############################## MEDIA QUERIES FOR CERTIFICATES SECTION ############################## */
+/* ############################## MEDIA QUERIES FOR CONTACT ME SECTION ############################## */
+@media screen and (max-width: 1000px) {
+  .social__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+}
+@media screen and (max-width: 505px) {
+  .social__item--link {
+    width: 100px;
+    height: 100px;
+  }
+  .social__item--icon {
+    font-size: 4rem;
+    padding-bottom: 20px;
+  }
+  .social__item--paragraph {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-me__info {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 488px) {
+  .contact-me__info {
+    font-size: 2.5rem;
+  }
+}
+/* ############################## MEDIA QUERIES FOR FOOTER SECTION ############################## */
+@media screen and (max-width: 1320px) {
+  .footer__nav--items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 605px) {
+  .footer__nav--items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
