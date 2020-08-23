@@ -671,6 +671,11 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 382px) {
+  .logo__smaller {
+    display: none;
+  }
+}
 /* ############################## MEDIA QUERIES FOR BANNER SECTION ############################## */
 @media screen and (max-width: 1124px) {
   .banner__heading {
@@ -680,11 +685,6 @@ img {
 @media screen and (max-width: 1017px) {
   .banner__heading {
     font-size: 8rem;
-  }
-}
-@media screen and (max-width: 910px) {
-  .banner__heading {
-    font-size: 7rem;
   }
 }
 @media screen and (max-width: 910px) {
@@ -702,24 +702,30 @@ img {
     font-size: 5rem;
   }
 }
-@media screen and (max-width: 695px) {
-  .banner__heading {
-    font-size: 5rem;
+@media screen and (max-width: 660px) {
+  .banner__paragraph {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 587px) {
+  .banner__heading--small {
+    display: none;
+  }
+}
+@media screen and (max-width: 444px) {
+  .banner__heading {
+    font-size: 4.5rem;
+  }
+}
+@media screen and (max-width: 405px) {
   .banner__heading {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 366px) {
   .banner__heading {
-    font-size: 3rem;
-  }
-}
-@media screen and (max-width: 373px) {
-  .banner__heading {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 }
 
