@@ -198,19 +198,15 @@ img {
   }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    font-size: 5rem;
+    font-size: 2rem;
     color: #fff;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
   }
   .menu-wrap .menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
     transition: color 0.3s linear;
-  }
-  .menu-wrap .menu > div > div > h2 {
-    font-size: 5rem;
-    color: #fff;
   }
 }
 
@@ -762,7 +758,7 @@ img {
   }
   .knowledge__cards {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 10px;
+    gap: 5px;
   }
   .knowledge__card--bottom {
     height: 100px;
@@ -774,7 +770,32 @@ img {
   .knowledge__card--logo {
     font-size: 3rem;
   }
+  .knowledge__card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
+@media screen and (max-width: 360px) {
+  .knowledge__card {
+    width: 80px;
+    height: 160px;
+  }
+  .knowledge__cards {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5px;
+  }
+  .knowledge__card--bottom {
+    height: 80px;
+    padding: 10px 0 10px 0;
+  }
+  .knowledge__card--heading {
+    font-size: 1.2rem;
+  }
+  .knowledge__card--logo {
+    font-size: 2rem;
+  }
+}
+
 /* ############################## MEDIA QUERIES FOR CERTIFICATES SECTION ############################## */
 @media screen and (max-width: 600px) {
   .certificates__paragraphs {
@@ -787,7 +808,14 @@ img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
+  .contact-me__info {
+    font-size: 3rem;
+  }
+  .social__item--link:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 @media screen and (max-width: 505px) {
   .social__item--link {
@@ -802,14 +830,19 @@ img {
     font-size: 1.2rem;
   }
 }
-@media screen and (max-width: 640px) {
-  .contact-me__info {
-    font-size: 3rem;
-  }
-}
+
 @media screen and (max-width: 488px) {
   .contact-me__info {
     font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 327px) {
+  .social__item--link {
+    width: 90px;
+    height: 90px;
+  }
+  .contact-me__info {
+    font-size: 2rem;
   }
 }
 /* ############################## MEDIA QUERIES FOR FOOTER SECTION ############################## */
