@@ -218,7 +218,7 @@ img {
 .banner {
   width: 100%;
   height: 100vh;
-  margin-top: 70px;
+  margin-top: 50px;
   background-image: linear-gradient(
       rgba(0, 116, 255, 0.4),
       rgba(0, 116, 255, 0.8),
@@ -248,7 +248,7 @@ img {
 .banner__paragraph {
   font-size: 3rem;
   color: #fff;
-  margin-top: 50px;
+  margin-top: 25px;
   animation-name: paragraph-animation;
   animation-duration: 2s;
   animation-timing-function: linear;
@@ -258,7 +258,7 @@ img {
   color: var(--primaryBlue);
   font: inherit;
   padding: 10px 30px;
-  margin-top: 50px;
+  margin-top: 25px;
   background-color: #fff;
   border: 5px solid var(--primaryBlue);
   border-radius: 1rem;
@@ -342,7 +342,6 @@ img {
   align-content: center;
 }
 .about-me__text {
-  /* height: 400px; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -677,55 +676,60 @@ img {
   }
 }
 /* ############################## MEDIA QUERIES FOR BANNER SECTION ############################## */
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1125px) {
   .banner__heading {
     font-size: 9rem;
   }
 }
-@media screen and (max-width: 1017px) {
+@media screen and (max-width: 1018px) {
   .banner__heading {
     font-size: 8rem;
   }
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 911px) {
   .banner__heading {
     font-size: 7rem;
   }
 }
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 803px) {
   .banner__heading {
     font-size: 6rem;
   }
 }
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 696px) {
   .banner__heading {
     font-size: 5rem;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 661px) {
   .banner__paragraph {
     font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 587px) {
+@media screen and (max-width: 588px) {
   .banner__heading--small {
     display: none;
   }
 }
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 445px) {
   .banner__heading {
     font-size: 4.5rem;
   }
 }
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 406px) {
   .banner__heading {
     font-size: 4rem;
   }
 }
 
-@media screen and (max-width: 366px) {
+@media screen and (max-width: 367px) {
   .banner__heading {
     font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 327px) {
+  .banner__heading {
+    font-size: 3rem;
   }
 }
 
