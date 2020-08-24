@@ -198,7 +198,7 @@ img {
   }
   .menu-wrap .menu > div > div > ul > li {
     list-style: none;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
     padding: 10px;
     margin: 10px;
@@ -661,6 +661,12 @@ img {
     display: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .menu-wrap .menu > div > div > ul > li {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .logo__small {
     display: none;
