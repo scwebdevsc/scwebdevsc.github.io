@@ -747,7 +747,7 @@ img {
 @media screen and (max-height: 500px) {
   .banner__heading {
     font-size: 3rem;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
   }
   .banner__paragraph {
     font-size: 2rem;
@@ -856,6 +856,7 @@ img {
 @media screen and (max-width: 640px) {
   .contact-me__info {
     font-size: 2rem;
+    margin-bottom: 20px;
   }
   .social__item--link:hover {
     transform: none;
