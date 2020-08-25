@@ -671,7 +671,9 @@ img {
 }
 @media screen and (max-height: 500px) {
   .menu-wrap .menu > div > div > ul > li {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
   }
 }
 @media screen and (max-width: 500px) {
