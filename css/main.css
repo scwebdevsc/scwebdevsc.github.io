@@ -745,13 +745,15 @@ img {
 @media screen and (max-height: 500px) {
   .banner__heading {
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
   .banner__paragraph {
     font-size: 2rem;
+    margin-top: 10px;
   }
   .banner__btn {
     font-size: 2rem;
+    margin-top: 10px;
   }
 }
 
