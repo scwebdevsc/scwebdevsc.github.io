@@ -745,7 +745,7 @@ img {
 @media screen and (max-height: 500px) {
   .banner__heading {
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .banner__paragraph {
     font-size: 2rem;
