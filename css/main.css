@@ -707,18 +707,7 @@ img {
     font-size: 5rem;
   }
 }
-@media screen and (max-width: 696px) {
-  .banner__heading {
-    font-size: 4rem;
-  }
-}
-@media screen and (max-width: 661px) {
-  .banner__paragraph {
-    font-size: 2rem;
-  }
-  .banner__btn {
-    font-size: 2rem;
-  }
+@media screen and (max-width: 750px) {
   .banner__btn:active {
     transform: none;
   }
@@ -730,6 +719,19 @@ img {
   }
   .banner__btn:active {
     transform: none;
+  }
+}
+@media screen and (max-width: 696px) {
+  .banner__heading {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 661px) {
+  .banner__paragraph {
+    font-size: 2rem;
+  }
+  .banner__btn {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 588px) {
@@ -749,11 +751,11 @@ img {
   }
   .banner__paragraph {
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .banner__btn {
     font-size: 2rem;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
 
@@ -786,6 +788,12 @@ img {
 
 /* ############################## MEDIA QUERIES FOR PROJECTS SECTION ############################## */
 /* ############################## MEDIA QUERIES FOR KNOWLEDGE SECTION ############################## */
+@media screen and (max-width: 750px) {
+  .knowledge__card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
 @media screen and (max-width: 670px) {
   .knowledge__card {
     width: 100px;
@@ -804,10 +812,6 @@ img {
   }
   .knowledge__card--logo {
     font-size: 3rem;
-  }
-  .knowledge__card:hover {
-    transform: none;
-    box-shadow: none;
   }
 }
 @media screen and (max-width: 360px) {
@@ -841,6 +845,12 @@ img {
 @media screen and (max-width: 1000px) {
   .social__items {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .social__item--link:hover {
+    transform: none;
+    box-shadow: none;
   }
 }
 @media screen and (max-width: 640px) {
@@ -884,6 +894,12 @@ img {
 @media screen and (max-width: 1320px) {
   .footer__nav--items {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer__nav--link:hover {
+    color: var(--primaryBlue);
+    background-color: transparent;
   }
 }
 @media screen and (max-width: 605px) {
