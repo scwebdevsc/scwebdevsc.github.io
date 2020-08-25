@@ -666,7 +666,7 @@ img {
 }
 @media screen and (max-width: 768px) {
   .menu-wrap .menu > div > div > ul > li {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -716,6 +716,15 @@ img {
   .banner__btn:active {
     transform: none;
   }
+  .banner__btn:hover {
+    color: var(--primaryBlue);
+    background-color: #fff;
+    border: 5px solid var(--primaryBlue);
+    transform: none;
+  }
+  .banner__btn:active {
+    transform: none;
+  }
 }
 @media screen and (max-width: 588px) {
   .banner__heading--small {
@@ -727,15 +736,16 @@ img {
     font-size: 3.5rem;
   }
 }
-@media screen and (max-width: 406px) {
+@media screen and (max-height: 500px) {
   .banner__heading {
     font-size: 3rem;
+    margin-top: 6rem;
   }
-}
-
-@media screen and (max-width: 367px) {
-  .banner__heading {
-    font-size: 2.5rem;
+  .banner__paragraph {
+    font-size: 2rem;
+  }
+  .banner__btn {
+    font-size: 2rem;
   }
 }
 
