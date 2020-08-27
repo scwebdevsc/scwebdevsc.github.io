@@ -371,18 +371,58 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
   justify-items: center;
   align-items: center;
   justify-content: center;
   align-content: center;
 }
-.my-projects__photo {
-  display: none;
-  width: 400px;
-  height: 300px;
+
+.my-project__heading {
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.my-project__photo {
+  width: 100%;
+  position: relative;
   border: var(--primaryBorder);
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.my-project__photo img {
+  transition: var(--primaryTransition);
+}
+.my-project__photo img:hover {
+  transform: scale(1.1);
+}
+.my-project__first::after {
+  content: "Website about fictional Airline company";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(0, 116, 255, 0.5);
+}
+.my-project__second::after {
+  content: "Website about fictional Hotel";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  background-color: rgba(0, 116, 255, 0.5);
 }
 /* ############################## KNOWLEDGE ############################## */
 .knowledge {
@@ -787,6 +827,33 @@ img {
 }
 
 /* ############################## MEDIA QUERIES FOR PROJECTS SECTION ############################## */
+@media screen and (max-width: 600px) {
+  .my-project__heading {
+    font-size: 2rem;
+  }
+  .my-projects__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .my-project__photo img:hover {
+    transform: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .my-project__first::after {
+    font-size: 1.5rem;
+  }
+  .my-project__second::after {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 337px) {
+  .my-project__first::after {
+    font-size: 1.2rem;
+  }
+  .my-project__second::after {
+    font-size: 1.2rem;
+  }
+}
 /* ############################## MEDIA QUERIES FOR KNOWLEDGE SECTION ############################## */
 @media screen and (max-width: 750px) {
   .knowledge__card:hover {
