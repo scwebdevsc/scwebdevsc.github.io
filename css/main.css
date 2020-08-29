@@ -66,6 +66,10 @@ img {
   font-size: 35px;
   font-weight: 700;
 }
+.link-top {
+  color: var(--primaryBlue);
+  text-decoration: none;
+}
 .topnav__item {
   display: inline-block;
   list-style-type: none;
