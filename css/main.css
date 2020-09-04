@@ -587,7 +587,6 @@ img {
   align-content: center;
 }
 .social__item--link {
-  display: inline-block;
   width: 150px;
   height: 150px;
   text-decoration: none;
@@ -647,7 +646,7 @@ img {
 /* ############################## FOOTER ############################## */
 .footer {
   background-color: var(--lightBlue2);
-  padding-bottom: 18px;
+  padding: 20px 0 20px 0;
 }
 .footer__nav--items {
   max-width: 1200px;
