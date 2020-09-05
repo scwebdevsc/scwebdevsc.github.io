@@ -787,10 +787,13 @@ img {
     font-size: 3.5rem;
   }
 }
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 450px) {
+  .banner {
+    justify-content: start;
+  }
   .banner__heading {
     font-size: 3rem;
-    margin-top: 2.5rem;
+    margin-top: 9rem;
   }
   .banner__paragraph {
     font-size: 2rem;
