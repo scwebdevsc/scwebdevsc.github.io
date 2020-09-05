@@ -245,7 +245,7 @@ img {
   animation-timing-function: linear;
 }
 .banner__paragraph {
-  font-size: 3rem;
+  font-size: 5rem;
   color: #fff;
   margin: 20px 20px 0 20px;
   animation-name: paragraph-animation;
@@ -730,9 +730,20 @@ img {
   }
 }
 /* ############################## MEDIA QUERIES FOR BANNER SECTION ############################## */
+
+@media screen and (max-width: 1300px) {
+  .banner__paragraph {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 1125px) {
   .banner__heading {
     font-size: 8rem;
+  }
+}
+@media screen and (max-width: 1048px) {
+  .banner__paragraph {
+    font-size: 3rem;
   }
 }
 @media screen and (max-width: 1018px) {
@@ -748,6 +759,14 @@ img {
 @media screen and (max-width: 803px) {
   .banner__heading {
     font-size: 5rem;
+  }
+}
+@media screen and (max-width: 796px) {
+  .banner__paragraph {
+    font-size: 2.5rem;
+  }
+  .banner__btn {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 750px) {
@@ -769,7 +788,7 @@ img {
     font-size: 4rem;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 670px) {
   .banner__paragraph {
     font-size: 2rem;
   }
