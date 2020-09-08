@@ -485,8 +485,10 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px; */
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 25px;
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -782,7 +784,7 @@ img {
 }
 /* ############################## MEDIA QUERIES ############################## */
 /* ############################## MEDIA QUERIES FOR UNIVERSAL STYLES ############################## */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
   .section-page {
     padding: 100px 25px 25px 25px;
   }
@@ -983,14 +985,23 @@ img {
     box-shadow: none;
   }
 }
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
+  .knowledge__card {
+    width: 100px;
+    height: 200px;
+  } */
+@media screen and (max-width: 850px) {
   .knowledge__card {
     width: 100px;
     height: 200px;
   }
-  .knowledge__cards {
+  /* .knowledge__cards {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 5px;
+  } */
+  .knowledge__cards {
+    grid-template-columns: repeat(auto-fit, 100px);
+    gap: 10px;
   }
   .knowledge__card--bottom {
     height: 100px;
@@ -1003,13 +1014,17 @@ img {
     font-size: 3rem;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   .knowledge__card {
     width: 80px;
     height: 160px;
   }
-  .knowledge__cards {
+  /* .knowledge__cards {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 5px;
+  } */
+  .knowledge__cards {
+    grid-template-columns: repeat(auto-fit, 80px);
     gap: 5px;
   }
   .knowledge__card--bottom {
