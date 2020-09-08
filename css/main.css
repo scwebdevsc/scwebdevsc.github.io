@@ -926,7 +926,7 @@ img {
   }
 }
 /* ############################## MEDIA QUERIES FOR ABOUT ME SECTION ############################## */
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 850px) {
   .about-me__photo {
     margin-bottom: 20px;
   }
@@ -1025,7 +1025,7 @@ img {
   } */
   .knowledge__cards {
     grid-template-columns: repeat(auto-fit, 80px);
-    gap: 5px;
+    gap: 10px;
   }
   .knowledge__card--bottom {
     height: 80px;
