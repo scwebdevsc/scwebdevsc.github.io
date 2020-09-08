@@ -564,15 +564,15 @@ img {
 }
 .cetificates__academy--udemy {
   font-weight: 700;
-  color: #ec5252;
+  /* color: #ec5252; */
 }
 .cetificates__academy--freecodecamp {
   font-weight: 700;
-  color: #0a0a23;
+  /* color: #0a0a23; */
 }
 .cetificates__academy--sololearn {
   font-weight: 700;
-  color: #ed7643;
+  /* color: #ed7643; */
 }
 .certificates__links {
   font-weight: 700;
